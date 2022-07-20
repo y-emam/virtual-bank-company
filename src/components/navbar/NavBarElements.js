@@ -48,8 +48,8 @@ export const MenuIcon = styled.div`
     display: block;
     color: white;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -70,6 +70,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  font-weight: bold;
 `;
 
 export const NavLink = styled(LinkS)`
@@ -80,9 +81,14 @@ export const NavLink = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 
   &.active {
     border-bottom: 3px solid #01bf71;
+  }
+
+  &:hover {
+    color: #01bf71;
   }
 `;
 

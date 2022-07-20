@@ -11,14 +11,14 @@ import {
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
 
-const NavBar = () => {
+const NavBar = ({ clickMenu }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">dolla</NavLogo>
 
-          <MenuIcon>
+          <MenuIcon onClick={clickMenu}>
             <FaBars></FaBars>
           </MenuIcon>
 
