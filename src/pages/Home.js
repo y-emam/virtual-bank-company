@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../components/navbar";
+import Section from "../components/section";
 import SideBar from "../components/sidebar";
 import Welcome from "../components/welcome";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <SideBar isOpen={isOpen} clickMenu={clickMenu} />
       <NavBar clickMenu={clickMenu} />
       <Welcome />
+      <Section />
     </>
   );
 };
