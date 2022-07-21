@@ -8,7 +8,6 @@ import {
   WelcomeContent,
   WelcomeH1,
   WelcomeP,
-  WelcomeBtn,
   ArrowRight,
   ArrowForward,
 } from "./WelcomeElements";
@@ -36,8 +35,9 @@ const Welcome = ({ Video }) => {
         <Button
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          primary={true}
-          dark={true}
+          primary={"true"}
+          dark={"true"}
+          to="/home"
         >
           Get Started {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>

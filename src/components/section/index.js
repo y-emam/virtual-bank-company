@@ -5,6 +5,7 @@ import { SectionData1 } from "./Data";
 
 import {
   BtnWrapper,
+  InfoContainer,
   Column1,
   Column2,
   Heading,
@@ -19,8 +20,8 @@ import {
 
 const Section = () => {
   return (
-    <Section id={1} lightBg={SectionData1.lightBg}>
-      {/* <InfoWrapper>
+    <InfoContainer lightBg={SectionData1.lightBg}>
+      <InfoWrapper>
         <InfoRow imgStart={SectionData1.imgStart}>
           <Column1>
             <TextWrapper>
@@ -43,8 +44,8 @@ const Section = () => {
             </ImgWrapper>
           </Column2>
         </InfoRow>
-      </InfoWrapper> */}
-    </Section>
+      </InfoWrapper>
+    </InfoContainer>
   );
 };
 
