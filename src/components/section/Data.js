@@ -18,7 +18,7 @@ export const SectionData1 = {
 };
 
 export const SectionData2 = {
-  id: "services",
+  id: "discover",
   lightBg: true,
   darkText: true,
   darkBtn: true,
@@ -28,21 +28,21 @@ export const SectionData2 = {
     "Every month several customers will get discounts at the end of the month.",
   btnLabel: "Get Started",
   imgStart: true,
-  alt: "online organiser",
+  alt: "discount",
   img: img3,
 };
 
 export const SectionData3 = {
   id: "services",
-  lightBg: false,
-  darkText: false,
-  darkBtn: false,
+  lightBg: true,
+  darkText: true,
+  darkBtn: true,
   topLine: "around the world",
   headline: "Use credit card around the world",
   description:
     "Get Credit cards that can be used in any ATM around the world without taking any percentage of your money.",
   btnLabel: "Get Started",
-  imgStart: false,
-  alt: "online organiser",
+  imgStart: true,
+  alt: "credit card",
   img: img2,
 };

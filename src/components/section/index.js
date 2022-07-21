@@ -38,7 +38,17 @@ const Section = ({
               <Heading darkText={darkText}>{headline}</Heading>
               <Paragraph darkText={darkText}>{description}</Paragraph>
               <BtnWrapper>
-                <Button big={"true"} primary={"true"} dark={darkBtn} to="/home">
+                <Button
+                  big={"true"}
+                  primary={"true"}
+                  dark={darkBtn}
+                  to="/home"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
                   {btnLabel}
                 </Button>
               </BtnWrapper>
