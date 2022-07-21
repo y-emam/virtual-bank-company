@@ -1,9 +1,5 @@
 import React from "react";
 import { Button } from "../ButtonElement";
-import "../../assets/images/svg_1.svg";
-import { SectionData1 } from "./Data";
-import img1 from "../../assets/images/svg_1.svg";
-
 import {
   BtnWrapper,
   InfoContainer,
@@ -19,23 +15,31 @@ import {
   TopLine,
 } from "./SectionElements";
 
-const Section = () => {
+const Section = ({
+  id,
+  lightBg,
+  imgStart,
+  topLine,
+  lightText,
+  headline,
+  darkText,
+  description,
+  btnLabel,
+  alt,
+  img,
+}) => {
   return (
-    <InfoContainer id={SectionData1.id} lightBg={SectionData1.lightBg}>
+    <InfoContainer id={id} lightBg={lightBg}>
       <InfoWrapper>
-        <InfoRow imgStart={SectionData1.imgStart}>
+        <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-              <TopLine>{SectionData1.topLine}</TopLine>
-              <Heading lightText={SectionData1.lightText}>
-                {SectionData1.headline}
-              </Heading>
-              <Paragraph darkText={SectionData1.darkText}>
-                {SectionData1.description}
-              </Paragraph>
+              <TopLine>{topLine}</TopLine>
+              <Heading darkText={darkText}>{headline}</Heading>
+              <Paragraph darkText={darkText}>{description}</Paragraph>
               <BtnWrapper>
                 <Button big={"true"} primary={"true"} dark={"true"} to="/home">
-                  {SectionData1.btnLabel}
+                  {btnLabel}
                 </Button>
               </BtnWrapper>
             </TextWrapper>
@@ -43,7 +47,7 @@ const Section = () => {
 
           <Column2>
             <ImgWrapper>
-              <Img src={img1} alt={SectionData1.alt} />
+              <Img src={img} alt={alt} />
             </ImgWrapper>
           </Column2>
         </InfoRow>
