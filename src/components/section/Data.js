@@ -6,6 +6,7 @@ export const SectionData1 = {
   id: "about",
   lightBg: false,
   darkText: false,
+  darkBtn: false,
   topLine: "Accessibility",
   headline: "Access your account wherever you are at any time",
   description:
@@ -17,29 +18,31 @@ export const SectionData1 = {
 };
 
 export const SectionData2 = {
-  id: "discover",
+  id: "services",
   lightBg: true,
   darkText: true,
-  topLine: "around the world",
-  headline: "Use credit card around the world.",
+  darkBtn: true,
+  topLine: "discounts",
+  headline: "Get a chance to win discounts every month",
   description:
-    "Get Credit cards that can be used in any ATM around the world without taking any percentage of your money.",
+    "Every month several customers will get discounts at the end of the month.",
   btnLabel: "Get Started",
   imgStart: true,
   alt: "online organiser",
-  img: img2,
+  img: img3,
 };
 
 export const SectionData3 = {
-  id: "about",
+  id: "services",
   lightBg: false,
   darkText: false,
-  topLine: "Accessibility",
-  headline: "Access your account wherever you are at any time",
+  darkBtn: false,
+  topLine: "around the world",
+  headline: "Use credit card around the world",
   description:
-    "You can use the website or download the app to track your account, spendings and trnasfers.",
+    "Get Credit cards that can be used in any ATM around the world without taking any percentage of your money.",
   btnLabel: "Get Started",
   imgStart: false,
   alt: "online organiser",
-  img: img3,
+  img: img2,
 };

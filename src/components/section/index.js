@@ -20,7 +20,7 @@ const Section = ({
   lightBg,
   imgStart,
   topLine,
-  lightText,
+  darkBtn,
   headline,
   darkText,
   description,
@@ -38,7 +38,7 @@ const Section = ({
               <Heading darkText={darkText}>{headline}</Heading>
               <Paragraph darkText={darkText}>{description}</Paragraph>
               <BtnWrapper>
-                <Button big={"true"} primary={"true"} dark={"true"} to="/home">
+                <Button big={"true"} primary={"true"} dark={darkBtn} to="/home">
                   {btnLabel}
                 </Button>
               </BtnWrapper>
