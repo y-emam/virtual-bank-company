@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../components/navbar";
 import SideBar from "../components/sidebar";
+import Welcome from "../components/welcome";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,7 @@ const Home = () => {
     <>
       <SideBar isOpen={isOpen} clickMenu={clickMenu} />
       <NavBar clickMenu={clickMenu} />
+      <Welcome />
     </>
   );
 };

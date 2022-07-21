@@ -16,7 +16,7 @@ const NavBar = ({ clickMenu }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">dolla</NavLogo>
+          <NavLogo to="/">banko</NavLogo>
 
           <MenuIcon onClick={clickMenu}>
             <FaBars></FaBars>
