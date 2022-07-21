@@ -16,7 +16,7 @@ const Home = () => {
       <SideBar isOpen={isOpen} clickMenu={clickMenu} />
       <NavBar clickMenu={clickMenu} />
       <Welcome />
-      {/* <Section /> */}
+      <Section />
     </>
   );
 };

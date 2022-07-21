@@ -1,7 +1,8 @@
 import React from "react";
-import { Button } from "react-scroll";
+import { Button } from "../ButtonElement";
 import "../../assets/images/svg_1.svg";
 import { SectionData1 } from "./Data";
+import img1 from "../../assets/images/svg_1.svg";
 
 import {
   BtnWrapper,
@@ -20,7 +21,7 @@ import {
 
 const Section = () => {
   return (
-    <InfoContainer lightBg={SectionData1.lightBg}>
+    <InfoContainer id={SectionData1.id} lightBg={SectionData1.lightBg}>
       <InfoWrapper>
         <InfoRow imgStart={SectionData1.imgStart}>
           <Column1>
@@ -33,14 +34,16 @@ const Section = () => {
                 {SectionData1.description}
               </Paragraph>
               <BtnWrapper>
-                <Button to="/home">{SectionData1.btnLabel}</Button>
+                <Button big={"true"} primary={"true"} dark={"true"} to="/home">
+                  {SectionData1.btnLabel}
+                </Button>
               </BtnWrapper>
             </TextWrapper>
           </Column1>
 
           <Column2>
             <ImgWrapper>
-              <Img src={SectionData1.img} alt={SectionData1.alt} />
+              <Img src={img1} alt={SectionData1.alt} />
             </ImgWrapper>
           </Column2>
         </InfoRow>
