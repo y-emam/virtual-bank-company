@@ -95,6 +95,7 @@ export const NavLink = styled(LinkS)`
 export const NavBtn = styled.div`
   display: flex;
   align-items: center;
+  margin-top: -36px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -119,8 +120,7 @@ export const NavBtnLink = styled.button`
 
   &:hover {
     background: #fff;
-    border: solid 4px #01bf71;
-    color: #01bf71;
+    color: #010606;
   }
 
   @media screen and (max-width: 768px) {

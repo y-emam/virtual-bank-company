@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElement";
+import { ButtonR } from "../ButtonElement";
 import {
   BtnWrapper,
   InfoContainer,
@@ -38,19 +38,19 @@ const Section = ({
               <Heading darkText={darkText}>{headline}</Heading>
               <Paragraph darkText={darkText}>{description}</Paragraph>
               <BtnWrapper>
-                <Button
-                  big={"true"}
+                {/* <Link to="/signin" style={{ textDecoration: "none" }}> */}
+                <ButtonR
                   primary={"true"}
-                  dark={darkBtn}
-                  to="/home"
+                  dark="true"
+                  to="signin"
                   smooth={true}
-                  duration={500}
-                  spy={true}
                   exact="true"
-                  offset={-80}
+                  spy={true}
+                  duration={300}
                 >
                   {btnLabel}
-                </Button>
+                </ButtonR>
+                {/* </Link> */}
               </BtnWrapper>
             </TextWrapper>
           </Column1>

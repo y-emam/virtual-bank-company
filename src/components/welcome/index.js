@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import video from "../../assets/videos/Earth.mp4";
-import { Button } from "../ButtonElement";
+import { ButtonS } from "../ButtonElement";
 import {
   WelcomeBg,
   VideoBg,
@@ -32,15 +32,19 @@ const Welcome = ({ Video }) => {
           tickets the World's Final Cup 2022
         </WelcomeP>
 
-        <Button
+        <ButtonS
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
           primary={"true"}
-          dark={"true"}
-          to="/home"
+          dark="true"
+          to="about"
+          smooth={true}
+          exact="true"
+          spy={true}
+          duration={300}
         >
           Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-        </Button>
+        </ButtonS>
       </WelcomeContent>
     </WelcomeContainer>
   );
