@@ -10,6 +10,7 @@ import {
   NavMenu,
 } from "./NavBarElements";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 const NavBar = ({ clickMenu }) => {
   return (
@@ -24,16 +25,42 @@ const NavBar = ({ clickMenu }) => {
 
           <NavMenu>
             <NavItem>
-              <NavLink to="about">About</NavLink>
+              <NavLink smooth={true} to="about">
+                About
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="discover">Discover</NavLink>
+              <NavLink
+                smooth={true}
+                exact={true}
+                spy={true}
+                duration={300}
+                to="discover"
+              >
+                Discover
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="services">Services</NavLink>
+              <NavLink
+                smooth={true}
+                exact={true}
+                spy={true}
+                duration={300}
+                to="services"
+              >
+                Services
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="signup">Sign Up</NavLink>
+              <NavLink
+                smooth={true}
+                exact={true}
+                spy={true}
+                duration={300}
+                to="signup"
+              >
+                Sign Up
+              </NavLink>
             </NavItem>
           </NavMenu>
 
