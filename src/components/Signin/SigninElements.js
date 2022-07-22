@@ -51,6 +51,7 @@ export const SigninInp = styled.input`
   border-radius: 4px;
   outline: none;
   padding: 10px 20px;
+  font-size: 16px;
 `;
 
 export const SigninBtn = styled.button`
