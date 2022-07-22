@@ -1,31 +1,32 @@
 import React from "react";
-import { SinginLog } from "./SigninElements";
+import {
+  SigninBg,
+  SigninBtn,
+  SigninContainer,
+  SigninForgot,
+  SigninHeader,
+  SigninInp,
+  SigninLabel,
+  SinginLogo,
+} from "./SigninElements";
 
 const Signin = () => {
   return (
-    <>
-      <SinginLog>banko</SinginLog>
+    <SigninBg>
+      <SinginLogo>banko</SinginLogo>
 
       <SigninContainer>
         <SigninHeader>Sign in to your account</SigninHeader>
 
         <SigninLabel>Email</SigninLabel>
-        <SigninInp
-          placeholder="Enter your email address"
-          required
-          type="email"
-          autofocus
-          key="email"
-        ></SigninInp>
+        <SigninInp required type="email" autoFocus key="email"></SigninInp>
         <SigninLabel>Password</SigninLabel>
-        <SigninInp
-          placeholder="Enter your email address"
-          required
-          type="password"
-          key="email"
-        ></SigninInp>
+        <SigninInp required type="password" key="password"></SigninInp>
+
+        <SigninBtn>Sign in</SigninBtn>
+        <SigninForgot to="/signin">Forgot Password</SigninForgot>
       </SigninContainer>
-    </>
+    </SigninBg>
   );
 };
 
